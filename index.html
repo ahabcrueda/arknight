@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111722">
+  <meta name="description" content="STICK ARKNIGHTS - 픽셀 스틱맨 전략 디펜스 팬 프로젝트">
+  <title>STICK ARKNIGHTS</title>
+  <link rel="stylesheet" href="zstyle.css">
+  <script src="zdata.js" defer></script>
+  <script src="zgame.js" defer></script>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" data-view="home" aria-label="STICK ARKNIGHTS 홈">
+        <span class="brand-mark">SA</span>
+        <span><b>STICK ARKNIGHTS</b><small>STRATEGY · PIXEL DEFENSE</small></span>
+      </a>
+      <div class="resource-strip" id="resource-strip"></div>
+      <button class="icon-button mobile-menu" id="mobile-menu" aria-label="메뉴 열기">☰</button>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="side-label">TERMINAL</div>
+        <nav class="main-nav" aria-label="주 메뉴">
+          <button class="nav-button active" data-view="home"><span>⌂</span> 메인 화면</button>
+          <button class="nav-button" data-view="story"><span>▤</span> 스토리 작전</button>
+          <button class="nav-button" data-view="annihilation"><span>⌁</span> 섬멸작전</button>
+          <button class="nav-button" data-view="roguelike"><span>✣</span> 통합전략</button>
+          <button class="nav-button" data-view="operators"><span>♟</span> 오퍼레이터</button>
+          <button class="nav-button" data-view="recruit"><span>✧</span> 오퍼레이터 모집</button>
+        </nav>
+        <div class="sidebar-note">
+          <div class="note-kicker">RHODES ISLAND</div>
+          <p>전술은 준비에서 시작된다.</p>
+          <span>BUILD 0.1 · LOCAL SAVE</span>
+        </div>
+      </aside>
+
+      <main id="main-content" class="main-content" tabindex="-1">
+        <section class="loading-screen"><div class="loader"></div><p>작전 데이터를 불러오는 중...</p></section>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modal-root"></div>
+  </div>
+</body>
+</html>
